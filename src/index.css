@@ -3,3 +3,61 @@
 body{
     background-color: #4d5058;
 }
+
+.distorted-image {
+    animation: distort 20s infinite;
+  }
+  
+  @keyframes distort {
+    0%, 100% { transform: skew(0deg, 0deg); }
+    2% { transform: skew(12deg, -37deg); }
+    4% { transform: skew(-28deg, 45deg); }
+    6% { transform: skew(39deg, -8deg); }
+    8% { transform: skew(-15deg, 22deg); }
+    10% { transform: skew(48deg, -41deg); }
+    12% { transform: skew(-33deg, 7deg); }
+    14% { transform: skew(19deg, -26deg); }
+    16% { transform: skew(-46deg, 31deg); }
+    18% { transform: skew(5deg, -49deg); }
+    20% { transform: skew(-23deg, 36deg); }
+    22% { transform: skew(42deg, -13deg); }
+    24% { transform: skew(-9deg, 47deg); }
+    26% { transform: skew(25deg, -34deg); }
+    28% { transform: skew(-50deg, 18deg); }
+    30% { transform: skew(2deg, -44deg); }
+    32% { transform: skew(-37deg, 29deg); }
+    34% { transform: skew(44deg, -6deg); }
+    36% { transform: skew(-20deg, 40deg); }
+    38% { transform: skew(33deg, -25deg); }
+    40% { transform: skew(-47deg, 11deg); }
+    42% { transform: skew(8deg, -38deg); }
+    44% { transform: skew(-31deg, 49deg); }
+    46% { transform: skew(46deg, -17deg); }
+    48% { transform: skew(-4deg, 27deg); }
+    50% { transform: skew(35deg, -50deg); }
+    52% { transform: skew(-42deg, 3deg); }
+    54% { transform: skew(14deg, -32deg); }
+    56% { transform: skew(-26deg, 43deg); }
+    58% { transform: skew(49deg, -10deg); }
+    60% { transform: skew(-18deg, 24deg); }
+    62% { transform: skew(41deg, -39deg); }
+    64% { transform: skew(-36deg, 6deg); }
+    66% { transform: skew(22deg, -29deg); }
+    68% { transform: skew(-49deg, 34deg); }
+    70% { transform: skew(1deg, -46deg); }
+    72% { transform: skew(-24deg, 38deg); }
+    74% { transform: skew(45deg, -12deg); }
+    76% { transform: skew(-7deg, 50deg); }
+    78% { transform: skew(28deg, -35deg); }
+    80% { transform: skew(-48deg, 16deg); }
+    82% { transform: skew(4deg, -42deg); }
+    84% { transform: skew(-39deg, 30deg); }
+    86% { transform: skew(47deg, -5deg); }
+    88% { transform: skew(-21deg, 37deg); }
+    90% { transform: skew(32deg, -23deg); }
+    92% { transform: skew(-50deg, 9deg); }
+    94% { transform: skew(11deg, -40deg); }
+    96% { transform: skew(-34deg, 48deg); }
+    98% { transform: skew(43deg, -19deg); }
+  }
+  
