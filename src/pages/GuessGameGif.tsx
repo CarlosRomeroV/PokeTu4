@@ -1,7 +1,6 @@
 
 import { ChangeEvent, useEffect, useState } from "react"
 import { levenshteinDistance } from "../utils/levenshtein";
-import { autoInput } from "../utils/autoInput";
 
 
 
@@ -23,13 +22,13 @@ export default function GuessGameGif() {
     const [failMessage, setFailMessage] = useState('')
     const rotation = ['', 'rotate-10', 'rotate-20', 'rotate-30', 'rotate-40', 'rotate-50', 'rotate-60', 'rotate-70', 'rotate-80', 'rotate-90', 'rotate-100', 'rotate-110', 'rotate-120', 'rotate-130', 'rotate-140', 'rotate-150', 'rotate-160', 'rotate-170', 'rotate-180', 'rotate-190', 'rotate-200', 'rotate-210', 'rotate-220', 'rotate-230', 'rotate-240', 'rotate-250', 'rotate-260', 'rotate-270', 'rotate-280', 'rotate-290', 'rotate-300', 'rotate-310', 'rotate-320', 'rotate-330', 'rotate-340', 'rotate-350', 'rotate-360'];
 
-    const handleKeyDown = (event) => {
+    /*const handleKeyDown = (event: { key: string; }) => {
       if (event.key === 'Enter') {
         guess()
       }
-    }
+    }*/
 
-    window.addEventListener('keydown', handleKeyDown);
+    //window.addEventListener('keydown', handleKeyDown);
     useEffect(()=>{
         //autoInput('userGuess')
         changePokemon()

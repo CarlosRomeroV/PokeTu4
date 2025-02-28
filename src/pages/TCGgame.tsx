@@ -17,9 +17,9 @@ export default function TCGgame() {
     const [bestScore, setBestScore] = useState(0)
     const [failMessage, setFailMessage] = useState('')
     const [hintMessage, setHintMessage] = useState('')
-    const [stage, setStage] = useState<string|undefined|number|null>(' ')
-    const [PKMNtype, setType] = useState<string|undefined|null>('')
-    const [set, setSet] = useState<string|undefined|null>('')
+    const [stage, setStage] = useState<string>(' ')
+    const [PKMNtype, setType] = useState<string>('')
+    const [set, setSet] = useState<string>('')
     
    // IMPORTANTE ----> Esto tiene que estar en el .env /////////////////////////////////////////////////////////////////////////////////
     const TCGkey:string = "05ce244f-f181-4953-9c83-f89e6fe56845"
@@ -118,9 +118,9 @@ export default function TCGgame() {
         setImageBlur('blur-sm')
         const cardStage = cardData?.subtypes[0]
         setHintMessage('')
-        setStage(cardStage)
-        setType(cardData?.types[0])
-        setSet(cardData?.set.series)
+        setStage(String?? cardStage)
+        setType(String?? cardData?.types[0])
+        setSet(String?? cardData?.set.series)
  
       }
 
