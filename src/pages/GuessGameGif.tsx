@@ -12,7 +12,7 @@ export default function GuessGameGif() {
     const [pokeIndex, setPokeIndex]= useState<number>()
     const [imgUrl, setImgUrl] = useState(`${BASE_POKEAPI}${pokeIndex}/sprites/front_default`);
     //const [imgUrl, setImgUrl] = useState(`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/back/400.gif`)
-    const [correctName, setCorrectName] = useState<string|null>(null)
+    const [correctName, setCorrectName] = useState<string>('NOMBREIMPOSIBLEDEADIVINARAMENOSQUELOSEPAS123456')
     const [introducedName, setIntroducedName] = useState<string>('')
     const [score, setScore] = useState(0)
     const [bestScore, setBestScore] = useState(0)

@@ -9,7 +9,7 @@ export default function GuessGame() {
 
     const [pokeIndex, setPokeIndex]= useState<number>()
     const [imgUrl, setImgUrl] = useState(`${BASE_POKEAPI}${pokeIndex}/sprites/front_default`);
-    const [correctName, setCorrectName] = useState<string|null>(null)
+    const [correctName, setCorrectName] = useState<string>('NOMBREIMPOSIBLEDEADIVINARAMENOSQUELOSEPAS123456')
     const [introducedName, setIntroducedName] = useState<string>('')
     const [score, setScore] = useState(0)
     const [bestScore, setBestScore] = useState(0)
