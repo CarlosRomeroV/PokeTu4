@@ -4,12 +4,8 @@ import { getUsers } from '../services/userService'
 interface User{
   id: number
   name: string
-  surname: string
   role: string
-  course: string
-  email: string
-  active: boolean
-  accepNotifications: boolean
+  notifications: boolean
 }
 function UserList() {
   const [users, setUsers] = useState<User[]>([])

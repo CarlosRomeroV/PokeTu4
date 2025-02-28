@@ -1,17 +1,22 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { getRandomPic } from '../utils/defaultProfilePics'
 
 function Navbar() {
 
+  const [defaultIcon, setDefaultIcon]= useState('')
 
+  useEffect(()=>{
+    setDefaultIcon(getRandomPic())
+  },[])
 
-  return (
-    
+  return (  
 
 <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <div className='text-white items-center justify-between my-auto w-full md:flex md:w-auto md:order-1'>
+  <div className='text-black items-center justify-between my-auto w-full md:flex md:w-auto md:order-1'>
     <button type="button" className="  mr-3 ">
-        <img src="/defaultIcon.jpg" className='size-13 rounded-2xl'></img>
+        <img src={defaultIcon} className='size-14 rounded-2xl'></img>
   </button>
   Nomvbre
   </div>
